@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Parsing</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            margin-top: 20px;
+        }
+        .success {
+            color: green;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function handleFileSelection() {
+            const fileInput = document.getElementById('file-input');
+            fileInput.click();
+        }
+    </script>
+</head>
+<body>
+    <h1>Log Parsing</h1>
+    {% if error %}
+    <p class="error">{{ error }}</p>
+    {% elif success %}
+    <p class="success">{{ success }}</p>
+    {% endif %}
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file-input" name="file" accept=".txt" style="display: none;" required>
+        <button type="button" onclick="handleFileSelection()" class="button">Choose File and Parse</button>
+        <input type="submit" value="Download Parsed CSV" class="button">
+    </form>
+</body>
+</html>
