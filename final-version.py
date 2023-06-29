@@ -82,7 +82,7 @@ with open('log-file.txt', 'r') as f:
                 end_time = ''
 
             # Count the number of ERROR indications on the INFO column
-            if 'ERROR' in columns[4]:
+            if 'ERROR' in columns[1]:
                 error_count += 1
 
         # Print the number of ERROR indications on the INFO column
