@@ -10,10 +10,9 @@ def parse_transaction_log(log_file):
 
             if len(parts) == 8:
                 log_dict = {
-                    'TransactionID': parts[0],
-                    'Timestamp': parts[1],
-                    'TransactionType': parts[2],
-                    'Status': parts[3],
+                    'Timestamp': parts[0],
+                    'Log-level indication': parts[1],
+                    'TransactionID': parts[3],
                     'UserID': parts[4],
                     'Details': parts[5],
                     'LogLevel': parts[6],
