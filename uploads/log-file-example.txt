@@ -1,7 +1,0 @@
-Trans001 - 2023-06-27 10:33:26,123 - Purchase - Completed - User123 - Purchased Item A
-Trans002 - 2023-06-27 10:34:27,456 - Purchase - Failed - User124 - Failed to purchase Item B
-Trans003 - 2023-06-27 10:35:28,789 - Refund - Completed - User125 - Refunded Item C
-Trans004 - 2023-06-27 10:36:29,012 - Purchase - Pending - User126 - Attempting to purchase Item D
-Trans005 - 2023-06-27 10:37:30,345 - Refund - Failed - User127 - Failed to refund Item E
-
-
