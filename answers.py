@@ -1,9 +1,11 @@
 """with open('log-file.txt', 'r') as f:
     first_line = f.readline()
 
-print(first_line) """
+print(first_line) 
+"""
 
-"""with open("log-file.txt", 'r') as f:
+"""
+with open("log-file.txt", 'r') as f:
     lines = f.readlines()
 
 err_count = 0
@@ -12,7 +14,8 @@ for line in lines:
     if temp_list[1] == "ERROR":
         err_count +=1
 
-print(err_count) """
+print(err_count) 
+"""
 
 """
 # Transactions Counter
